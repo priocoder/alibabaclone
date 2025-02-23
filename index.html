@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---brand icon link--->        
+  <link rel="icon" href="https://www.shutterstock.com/image-vector/west-sumatra-indonesia-september-26-260nw-2366694395.jpg">
+  <!---side title--->    
+  <title>Alibaba clone | Design</title>
+  <!---font awesome cdn link--->        
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!---bootstrap cdn link--->        
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <!---bootstrap icon link-start--->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!---This line for js animate cdn--->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+  <!---style.css link--->        
+  <link rel="stylesheet"  href="style.css"/>
+</head>
+<body>
+<!---carousel-start--->
+<div class="carousel-section">
+  <div class="contianer">
+    <div class="carousel slide"data-ride="carousel" data-aos="zoom-in">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>24/7 CUSTOMER SERVICE</p>
+        </div>
+        <div class="carousel-item">
+          <p>LIFETIME WARRANTY</p>
+        </div>
+        <div class="carousel-item">
+          <p>FREE INTERNATIONAL SHIPPING </p>
+        </div>
+        <div class="carousel-item">
+          <p>100% MONEY BACK GUARANTEE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---carousel-close--->
+<!---search-section-start--->
+<div class="alibaba-brand-search-icon-msg-ord-cart">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 d-sm-block d-md-none"><!---this line for mobile menu--->
+        <span class="d-sm-block d-md-none" style="font-size:25px;cursor:pointer; padding-left:3%; color: #FF6601" onclick="openNav()">&#9776;</span>
+        <div id="myNav" class="secend-nav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="secend-nav-content">
+            <a href="#">Wan shopping</a>
+            <a href="#">Woman shopping</a>
+            <a href="#">Shopping bag</a>
+            <a href="#">All product</a>
+            <a href="#">Large bag</a>
+            <a href="#">Mini bag</a>
+            <a href="#">For a bayers</a>
+            <a href="#">Persional production</a>
+            <a href="#">Trade show</a>
+            <a href="#">Supplyers</a>
+            <a href="#">Open case</a>
+            <a href="#">Report</a>
+            <a href="#">Blog</a>
+            <a href="#">Trade</a>
+            <a href="#">production</a>
+            <a href="#">Logistic</a>
+            <a href="#">Sell on alibaba</a>
+            <a href="#">country select</a>
+            <a href="#">currency select</a>
+            <a href="#">Language</a>
+          </div>
+        </div>
+      </div><!---this line for mobile menu--->
+      <div class="col-8 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 alibaba-brand-left-section">
+        <div class="brand-logo">
+          <a href="index.html"><img src="image/Alibaba-Logo-removebg-preview.png">
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-2 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 alibaba-search-mid-section">
+        <div class="main-search-section d-none d-sm-block">
+         <form>
+           <input type="text" name="" placeholder="what are you looking for...">
+          <div class="main-search-btn">
+            <button><i class="bi bi-search"> Search</i></button>
+          </div>
+         </form>
+        </div>
+        <!---mobile-searchbar-start--->
+          <button class="openBtn d-sm-block d-md-none" onclick="openSearch()">
+            <i class="bi bi-search-heart"></i>
+          </button>
+          <div id="myOverlay" class="overlay"><!---mobile-searchbar-html--->
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        <!---mobile-searchbar-close--->
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-4 alibaba-ic-mg-or-cr-right-section">
+        <div class="icon-msg-ord-cart">
+          <a class="main-sign-in" href="singup.html">
+            <i class="bi bi-person"></i>
+          </a>
+          <div class="signin-join">
+            <a>
+              <span class="sign-in">sign in</span>
+              <br>
+              <span class="join-for-free">Join for free</span>
+            </a> 
+          </div>
+          <a href="Messages.html" class="msg d-lg-inline-block d-md-none"><i class="bi bi-chat-square-dots"></i><br>Messages</a>  
+          <a class="order d-lg-inline-block d-md-none" href="#"><i class="bi bi-archive"></i><br>Orders</a>
+          <a class="cart d-lg-inline-block d-md-none" href="#"><i class="bi bi-cart2"></i><br>Cart</a>
+        </div>  
+      </div>
+
+    </div>
+  </div>
+</div>
+<!---search-section-close--->
+<!---navbar-start--->
+  <nav class="navbar navbar-expand-lg sticky-top d-none d-sm-block">
+    <div class="container-fluid">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-list"></i> Catagories
+        </a>
+        <ul class="dropdown-menu catagories">
+          <li><a class="dropdown-item" href="man shopping .html">Man's Shopping</a></li>
+          <li><a class="dropdown-item" href="woman-shoping.html">wman's Shopping</a></li>
+          <li></li>
+          <li><a class="dropdown-item" href="shoppingbag.html">Shopping Bags</a></li>
+          <li><a class="dropdown-item" href="#">All product Bags</a></li>
+          <li><a class="dropdown-item" href="#">Large Bags</a></li>
+          <li><a class="dropdown-item" href="#">Mini Bags</a></li>
+        </ul>
+      </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapsibleNavbar" aria-controls="navbarcollapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggler"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapsibleNavbar">
+        <ul class="navbar-nav">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ready to ship
+            </a>
+            <ul class="dropdown-menu ready-to-ship">
+              <li><a class="dropdown-item" href="#">For buyers</a></li>
+              <li><a class="dropdown-item" href="supplier.html">For suppliers</a></li>
+              <li></li>
+              <li><a class="dropdown-item" href="#">Open a case</a></li>
+              <li><a class="dropdown-item" href="#">Report IPR infringement</a></li>
+              <li><a class="dropdown-item" href="#">Report abuse</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personal protective.html">Personal protective E...</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Trade Assurance.html">Trade Show</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Buyer Central
+            </a>
+            <ul class="dropdown-menu buyer-central">
+              <li>
+                <a class="dropdown-item Blog" href="#"><img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01wlImAt1sGy58OFEjA_!!6000000005740-2-tps-79-79.png"> Blog</a>
+              </li>
+              <li>
+                <a class="dropdown-item Trade-Assurance" href="Trade Assurance.html"><img src="https://s.alicdn.com/@img/tfs/TB1gBp7SSzqK1RjSZPcXXbTepXa-40-40.png?webp=close">Trade Assurance</a>
+              </li>
+              <li>
+                <a class="dropdown-item Production" href="#"><img src="https://s.alicdn.com/@img/tfs/TB1mhSNafc3T1VjSZPfXXcWHXXa-40-32.png?webp=close">Production Monitoring<br> & Inspection Service</a>
+              </li>
+              <li>
+                <a class="dropdown-item Logistics" href="#"><img src="https://s.alicdn.com/@img/tfs/TB196hmTbPpK1RjSZFFXXa5PpXa-40-40.png?webp=close">Logistics Service</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sell on Alibaba.com
+            </a>
+            <ul class="dropdown-menu sell-on-alibaba">
+              <li>
+                <a class="dropdown-item" href="#">For global suppliers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">For Chinese suppliers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Partner Program</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="external-nav-right">
+          <li class="nav-item">
+              <a class="nav-link" href="https://play.google.com/store/apps"><i class="bi bi-phone"></i>Gate app</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              English-USD
+              </a>
+              <ul class="dropdown-menu english-usd_currence">
+                <span>Region settiongs</span>
+                <form action="">
+                  <label for="language">Language</label>
+                  <select id="cars" name="cars" size="1">
+                    <option value="volvo">Bangla</option>
+                    <option value="saab">English</option>
+                    <option value="fiat">Spanish</option>
+                    <option value="audi">Japanish</option>
+                    <option value="audi">China</option>
+                    <option value="audi">Hindi</option>
+                    <option value="audi">Urdo</option>
+                  </select><br>
+                  <label for="currence">Currence</label>
+                  <select id="cars" name="cars" size="1">
+                    <option value="volvo">Bangladeshi(TK)</option>
+                    <option value="saab">Dolar</option>
+                    <option value="fiat">Rupi</option>
+                    <option value="audi">Paund</option>
+                    <option value="audi">Yean</option>
+                    <option value="audi">Coyen</option>
+                    <option value="audi">Quayen</option>
+                  </select><br>
+                  <p><i class="bi bi-exclamation-circle"></i> The price for this currency is subject to change with foreign exchange rate. For reference only.</p>
+                  <br>
+                  <input type="submit" value="Save">
+                </form>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ship-bangladesh
+              </a>
+              <ul class="dropdown-menu Select-Country">
+                <span>Choose your location</span>
+                <form action="">
+                    <label for="language">Delivery options and fees may vary based on your location</label>
+                    <div class="sign-in-to-see">
+                      <a href="#">sign in to see your address</a>
+                    </div>
+                    <hr>
+                    <select id="cars" name="cars" size="1">
+                      <option value="volvo">Bangladesh</option>
+                      <option value="saab">Chin</option>
+                      <option value="fiat">Japan</option>
+                      <option value="audi">America</option>
+                      <option value="audi">Austrolia</option>
+                      <option value="audi">India</option>
+                      <option value="audi">Pakistan</option>
+                      <option value="audi">Arob</option>
+                    </select>
+                    <br>
+                    <input type="text" placeholder="Enter your zip code">
+                    <br>
+                    <input type="submit" value="Save">
+                  </form>
+              </ul>
+            </li>  
+        </span>
+      </div>
+    </div>
+  </nav>
+</div>
+<!---navbar-close--->
+<!---sidebar-start--->
+<div class="main-wrap">
+  <div class="container-fluid">
+    <div class="row" data-aos="zoom-in">
+      <div class="col-lg-2 col-xl-2 col-xxl-2">
+        <div class="sidebar">
+          <div class="sidebar-categories d-none d-lg-block">
+           <h5>Categories</h5>
+            <a href="man shopping .html"><p>Man's Shopping</p></a>
+             <a href="woman-shoping.html"><p>Wman's Shopping</p></a>
+               <a href="shoppingbag.html"><p>Shopping bag</p></a>
+               <a href="#"><p>All product</p></a>
+             <a href="#"><p>Mini Bags</p></a>
+            <a href="#"><p>Large Bags</p></a>
+          </div>
+
+          <div class="sidebar-supplier d-none d-lg-block">
+           <h5>Supplier Types</h5>
+            <a class="content-1" href="Trade Assurance.html"><i class="bi bi-app"></i><img src="https://s.alicdn.com/@img/tfs/TB1gBp7SSzqK1RjSZPcXXbTepXa-40-40.png?webp=close"> Trade Assurance</a>
+             <a class="content-1" href="supplier.html"><i class="bi bi-app"></i><span>Verified</span> Supplier</a>
+            <a class="content-1" href="#"><i class="bi bi-app"></i>1h responsive time</a>
+          </div>
+
+          <div class="sidebar-supplier d-none d-lg-block">
+           <h5>Product Types</h5>
+            <a class="content-1" href="#"><i class="bi bi-app"></i>Ready to ship</a>
+             <a class="content-1" href="#"><i class="bi bi-app"></i>Simple Order</a>
+            <a class="content-1" href="#"><i class="bi bi-app"></i>Explore...</a>
+          </div>
+        </div>
+      </div>
+<!---sidebar-close--->
+<!---content-start--->
+      <div class="col-lg-10 col-xl-10 col-xxl-10">
+       <div class="main-wrap-product">
+        <div class="Catagories-alibaba">
+          <a href="Alibaba.com">Alibaba<i class="bi bi-arrow-right-short"></i></a>
+           <a href="#">Business Service<i class="bi bi-arrow-right-short"></i></a>
+             <a href="#">Logistic Service<i class="bi bi-arrow-right-short"></i></a>
+           <a href="#">Air Freight<i class="bi bi-arrow-right-short"></i></a>
+          <a href="Alibaba.com">Wholesale Alibaba online shipping</a>
+         <h4>Alibaba Online Shopping</h4>
+        </div>
+        <div class="product-section">
+          <div class="row">
+            <div class="col col-sm-6 col-md-6 col-lg-3 col-xxl-3">
+              <div class="frist-section-product">
+                <img src="https://s.alicdn.com/@sc04/kf/S69a27e8f3a48463cb350cf37dce64969P.jpg_300x300.jpg">
+                <p>Express Bags colors infant custom printed color...</p>
+                <h6>$1-3$</h6>
+                <h5>Min.order.1-5pieces</h5>
+                <h6>10 yrs in supplier</h6>
+                <button class="btn-left">Contact supplier</button>
+                <button class="btn-right">Chat now</button>
+              </div>
+            </div>
+            <div class="col col-sm-6 col-md-6 col-lg-3">
+              <div class="frist-section-product">
+                <img src="https://s.alicdn.com/@sc04/kf/Hf65af6fb91434758952fd6cda9aef12dU.jpg_300x300.jpg">
+                <p>Alibaba online shopping Electronics product...</p>
+                <h6>$1-5$</h6>
+                <h5>Min.order.1-5pieces</h5>
+                <h6>10 yrs in supplier</h6>
+                <button class="btn-left">Contact supplier</button>
+                <button class="btn-right">Chat now</button>
+              </div>
+            </div>
+            <div class="col col-sm-6 col-md-6 col-lg-3">
+              <div class="frist-section-product">
+                <img src="https://s.alicdn.com/@sc04/kf/H2a40c01dbb30460086b7cd2bf19aefb9d.jpg_300x300.jpg">
+                <p>US-Srilanka shop in Srilanka online shopping...</p>
+                <h6>$1-4$</h6>
+                <h5>Min.order.1-5pieces</h5>
+                <h6>10 yrs in supplier</h6>
+                <button class="btn-left">Contact supplier</button>
+                <button class="btn-right">Chat now</button>
+              </div>
+            </div>
+            <div class="col col-sm-6 col-md-6 col-lg-3">
+              <div class="frist-section-product">
+                <img src="https://s.alicdn.com/@sc04/kf/A966feecaa3bd4b4b84ea97eb931e7eb5G.jpg_300x300.jpg">
+                <p>Shipping-free trader ems dhl express current online shop...</p>
+                <h6>$1-7$</h6>
+                <h5>Min.order.1pieces</h5>
+                <h6>10 yrs in supplier</h6>
+                <button class="btn-left">Contact supplier</button>
+                <button class="btn-right">Chat now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div> 
+</div>   
+<!---content-colose--->
+<!---content-bottom-start--->
+<div class="content-bottom">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/A56ddd97987a2401f805d0f66e6f1519dY.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ">  
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/H86452fb6a1a6475d8f77dec30700d9c9r.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ">  
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/U5b811c38ae214167905c1cb859a761f33.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ">  
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/U930158aa11624e61a538cb7562796316t.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/sets/LifeStyle/11105/630X500_11105W-LSC.JPG">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/sets/RendLifeStyle/11105/RingPack_11105_M1_RND_DIM_wht_100CT_W_pic_010.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/sets/RendLifeStyle/11105/RingPack_11105_M1_RND_DIM_wht_100CT_W_pic_012.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/sets/Jewelry/gpuv2/14211/14211_M1_NOP_NUL_nul_NUL_W/14211_W_NOP_Glr_304X240.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/U9b572b1c936b48b49fb470351d4ec2983.png_300x300.png">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/HTB1I6UDhJfJ8KJjy0Feq6xKEXXac.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/H000252afd6fa40209ef1a8d29052eaadA.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://s.alicdn.com/@sc04/kf/Sec4e1654357f4de5abf52f0bf8346d7d4.jpg_300x300.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Women-White-Gold-Wedding-Ring.192ff.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Women-Yellow-Gold-Wedding-Ring.e78e3.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Women-Rose-Gold-Wedding-Ring.ff73b.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Women-Platinum-Wedding-Ring.4d915.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/images/amazingHomepage/Wedding_Anniversary2.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/images/amazingHomepage/box-c.jpg?v=4">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/images/amazingHomepage/9_engage.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ion.r2net.com/images/amazingHomepage/Eternity.jpg?v=11">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Men-Classic-Wedding-Ring.d868a.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Men-Carved-Wedding-Ring.7e79f.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Men-Alternative-Wedding-Ring.e8b44.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+      <div class="col- col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="secend-section-product" data-aos="fade-up">
+          <img src="https://ecommo--ion.jamesallen.com/static-dyo-ja/Men-Diamond-Wedding-Ring.51cc1.jpg">
+          <p>Shipping-free trader ems dhl express current online shop...</p>
+          <h6>$1-7$</h6>
+          <h5>Min.order.1pieces</h5>
+          <h6>10 yrs in supplier</h6>
+          <button class="btn-left">Contact supplier</button>
+          <button class="btn-right">Chat now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---content-bottom-close--->
+<!---msg-and-sticky-top--->
+  <div class="Message sticky-bottom">
+    <div class="Message0">
+      <a href="Messages.html">Message</a>
+    </div>
+    <button class="Message-button"><i class="bi bi-envelope-heart"></i></button>
+  </div>
+
+  <div class="right-menu sticky-bottom">
+    <div class="test">
+      <a href="index.html">Back to top</a>
+    </div>
+    <button class="menu-button">↑</button>
+  </div>
+<!---msg-and-sticky-top--->
+<!---text-section-start--->
+  <div class="text-section">
+    <div class="container-fluid">
+      <div class="text-border">
+        <div class="row" data-aos="slide-up">
+          <div class="col-lg-2 col-xl-2 col-xxl-2">
+            <span>
+              About alibaba online shopping website:
+            </span>
+          </div>
+          <div class="col-lg-10 col-xl-10 col-xxl-10">
+            <p>Wholesale alibaba online shopping website include racks designed to help you organize different types of jewelry, clothes and accessories. For instance, the standing earring holder is a jewelry organizer meant to hold earrings, while the earring racks help you display your earrings and serve as a beautiful decorative item. The sunglass rack can be rotated 360 degrees and can fit a large number of glasses and shades. It has several hooks and holes that will help you showcase your products. Browse through the alibba online shopping site and pick the right fit for your business.</p>
+            <br>
+            <p>
+              Browse Alibaba.com to get the most efficient, beautiful and aesthetic alibaba online shopping website. Get unbelievable discounts from reliable alibaba online shopping website sellers worldwide and up your online business game. It doesn't matter whether you are a professional or a business entity, you are sure to find alibaba online shopping website that serve your needs. You can buy alibaba online shopping website built with cutting-edge technologies ensuring your target visitors have a seamless experience. The popular technologies include HTML, CSS, CakePHP, Javascript, CMS, and so on. The good news is you don't need to fret the technical know-how. Just look through a wide array of selections of alibaba online shopping website, ranging from a restaurant site to a dating application, and select a well-suited option. Low on loading time and high on aesthetics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secend-text-section">
+    <div class="container-fluid">
+      <div class="text-border">
+        <div class="row" data-aos="fade-up">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="related-search">
+              <a href="#">india online shopping website</a>
+              <a href="#">shopping website provider</a>
+              <a href="#">website design in germany</a>
+              <a href="#">sudan online shopping website design</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">  
+            <div class="related-search">
+              <a href="#">consumer shopping website</a>
+              <a href="#">b2b2c website</a>
+              <a href="#">website design b2b</a>
+              <a href="#">website with drupal wordpress</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="related-search">
+              <a href="#">the best website for shopping online</a>
+              <a href="#">online shopping website pakistan</a>
+              <a href="#">china alibaba pakistan website</a>
+              <a href="#">china b2b website</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="related-search">
+              <a href="#">c2c online shopping website design</a>
+              <a href="#">china b2b b2c website</a>
+              <a href="#">china website design b2c</a>
+              <a href="#">Alibaba.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third-text-section">
+    <div class="container-fluid">
+      <div class="text-border">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-6 col-xl-6 col-xxl-6">
+            <p>Haven't found the right supplier yet ? Let matching verified suppliers find you.</p>
+          </div>
+          <div class="col-lg-4 col-xl-4 col-xxl-4">
+            <a href="#">Haven't found the</a>
+          </div>
+          <div class="col-lg-2 col-xl-2 col-xxl-2">
+            <img src="">
+            <span>Request for Quotation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---text-section-close--->
+<!---fotter-start--->
+<section class="section-1" id="spsc">
+  <div class="section-0">
+    <div class="container">
+      <div class="row" data-aos="slide-up">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>Customer services</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Report abuse</a>
+          <a href="#">Open a case</a>
+          <a href="#">Policies & rules</a>
+          <a href="#">Get paid for your feedback</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>About us</h4>
+          <a href="about.html">About Alibaba.com</a>
+          <a href="#">About Alibaba Group</a>
+          <a href="#">About Alibaba.com Blog</a>
+          <a href="#">Legal Notification</a>
+          <a href="supplier.html">About Product</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>Source on Alibaba.com</h4>
+          <a href="#">Resources</a>
+          <a href="#">Request for Quatation</a>
+          <a href="#">Ready to Ship</a>
+          <a href="#">Buyer partners </a>
+          <a href="#">Alibaba.com select</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>Sell on Unitube.com</h4>
+          <a href="#">Supplier memberships</a>
+          <a href="#">Learning Center</a>
+          <a href="#">Partner Program</a>
+          <a href="#">Any Time Any Qus</a>
+          <a href="#">Help for Unitube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fotter-content">
+    <div class="container">
+      <div class="row" data-aos="slide-up">
+        <div class="col-lg-5 col-xl-5 col-xxl-5">
+          <div class="download-app">
+            <h5>Download <a href="https://play.google.com/store/apps?hl=en&gl=US">
+                <button class="app-store"><i class="bi bi-apple"></i>App store</button>
+              </a>
+              <a href="https://play.google.com/store/apps;">
+                <button class="google-play"><i class="bi bi-google-play"></i> Play store</button>
+              </a>
+            </h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 col-xxl-4">
+          <h5>Alibaba supplier app :<a href="https://unitube.xyz/"><img class="Unitube-main-logo" src="image/unitube.png">---</a></h5>
+        </div>
+        <div class="col-lg-3 col-xl-3 col-xxl-3">
+          <div class="socialmeida-icon">
+          <h5>Follow us :<a href="https://web.facebook.com/profile.php?id=100081438856484"><img class="face-icon"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlqammHal_OHwVQR9pZZtlzenDW_EbNBX5_w&usqp=CAU"></a>
+            <a href="https://www.instagram.com"><img class="insta-icon" src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM"></a>
+            <a href="https://twitter.com/islam1725"><img class="twit-icon" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png"></a>
+            <a href="https://www.linkedin.com/in/md-jahirul-islam-2b6a78252/"><img class="twit-icon" src="https://www.pngkit.com/png/full/556-5564956_share-this-project-with-your-network-of-choice.png"></a>
+          </h5>
+          </div>
+        </div>
+
+        <div class="fotter-language">
+        <a href="#">Alibaba.com site :</a>  
+        <a href="#">International -</a>
+        <a href="#">Español -</a>
+        <a href="#">Portugues -</a>
+        <a href="#">Deutsch -</a>
+        <a href="#">Francais -</a>
+        <a href="#">Italiano -</a>
+        <a href="#">हिंदी -</a>
+        <a href="#">Pусский-</a>
+        <a href="#">한국어</a>
+        <a href="#"> - اللغة العربية - </a>
+        <a href="#">ภาษาไทย -</a>
+        <a href="#"> Türk</a>
+        </div>
+        <p>© 2018-2023 Alibaba.com. All rights reserved.</p>
+       </div>
+    </div> 
+  </div>
+</section>
+<!---fotter-close--->
+<!---mobile-searchbar-script-start--->
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!---mobile-searchbar-script-close--->
+<!---mobile-menu-script-start--->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!---mobile-menu-script-close--->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" />
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"/>   
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"/>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<!---This lines for animate script--->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000
+    });
+  </script>
+</body>
+</html>

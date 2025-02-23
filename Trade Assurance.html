@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trade</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+
+  <link rel="stylesheet"  href="style.css"/>
+</head>
+<body>
+<!---carousel-start--->
+<div class="carousel-section">
+  <div class="contianer">
+    <div class="carousel slide"data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>24/7 CUSTOMER SERVICE</p>
+        </div>
+        <div class="carousel-item">
+          <p>LIFETIME WARRANTY</p>
+        </div>
+        <div class="carousel-item">
+          <p>FREE INTERNATIONAL SHIPPING </p>
+        </div>
+        <div class="carousel-item">
+          <p>100% MONEY BACK GUARANTEE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---carousel-close--->
+<!---search-section-start--->
+<div class="alibaba-brand-search-icon-msg-ord-cart">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 d-sm-block d-md-none"><!---this line for mobile menu--->
+        <span class="d-sm-block d-md-none" style="font-size:25px;cursor:pointer; padding-left:3%; color: #FF6601" onclick="openNav()">&#9776;</span>
+        <div id="myNav" class="secend-nav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="secend-nav-content">
+            <a href="404.html">Wan shopping</a>
+            <a href="404.html">Woman shopping</a>
+            <a href="404.html">Shopping bag</a>
+            <a href="404.html">All product</a>
+            <a href="404.html">Large bag</a>
+            <a href="404.html">Mini bag</a>
+            <a href="404.html">For a bayers</a>
+            <a href="404.html">Persional production</a>
+            <a href="404.html">Trade show</a>
+            <a href="404.html">Supplyers</a>
+            <a href="404.html">Open case</a>
+            <a href="404.html">Report</a>
+            <a href="404.html">Blog</a>
+            <a href="404.html">Trade</a>
+            <a href="404.html">production</a>
+            <a href="404.html">Logistic</a>
+            <a href="404.html">Sell on alibaba</a>
+            <a href="404.html">country select</a>
+            <a href="404.html">currency select</a>
+            <a href="404.html">Language</a>
+          </div>
+        </div>
+      </div><!---this line for mobile menu--->
+      <div class="col-8 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 alibaba-brand-left-section">
+        <div class="brand-logo">
+          <a href="index.html"><img src="image/Alibaba-Logo-removebg-preview.png">
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-2 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 alibaba-search-mid-section">
+        <div class="main-search-section d-none d-sm-block">
+         <form>
+           <input type="text" name="" placeholder="what are you looking for...">
+          <div class="main-search-btn">
+            <button><i class="bi bi-search"> Search</i></button>
+          </div>
+         </form>
+        </div>
+        <!---mobile-searchbar-start--->
+          <button class="openBtn d-sm-block d-md-none" onclick="openSearch()">
+            <i class="bi bi-search-heart"></i>
+          </button>
+          <div id="myOverlay" class="overlay"><!---mobile-searchbar-html--->
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        <!---mobile-searchbar-close--->
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-4 alibaba-ic-mg-or-cr-right-section">
+        <div class="icon-msg-ord-cart">
+          <a class="main-sign-in" href="singup.html">
+            <i class="bi bi-person"></i>
+          </a>
+          <div class="signin-join">
+            <a>
+              <span class="sign-in">sign in</span>
+              <br>
+              <span class="join-for-free">Join for free</span>
+            </a> 
+          </div>
+          <a href="Messages.html" class="msg d-lg-inline-block d-md-none"><i class="bi bi-chat-square-dots"></i><br>Messages</a>  
+          <a class="order d-lg-inline-block d-md-none" href="404.html"><i class="bi bi-archive"></i><br>Orders</a>
+          <a class="cart d-lg-inline-block d-md-none" href="404.html"><i class="bi bi-cart2"></i><br>Cart</a>
+        </div>  
+      </div>
+
+    </div>
+  </div>
+</div>
+<!---search-section-close--->
+<!---navbar-start--->
+  <nav class="navbar navbar-expand-lg sticky-top d-none d-sm-block">
+    <div class="container-fluid">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-list"></i> Catagories
+        </a>
+        <ul class="dropdown-menu catagories">
+          <li><a class="dropdown-item" href="man shopping .html">Man's Shopping</a></li>
+          <li><a class="dropdown-item" href="woman-shoping.html">wman's Shopping</a></li>
+          <li></li>
+          <li><a class="dropdown-item" href="shoppingbag.html">Shopping Bags</a></li>
+          <li><a class="dropdown-item" href="404.html">All product Bags</a></li>
+          <li><a class="dropdown-item" href="404.html">Large Bags</a></li>
+          <li><a class="dropdown-item" href="404.html">Mini Bags</a></li>
+        </ul>
+      </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapsibleNavbar" aria-controls="navbarcollapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggler"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapsibleNavbar">
+        <ul class="navbar-nav">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ready to ship
+            </a>
+            <ul class="dropdown-menu ready-to-ship">
+              <li><a class="dropdown-item" href="404.html">For buyers</a></li>
+              <li><a class="dropdown-item" href="supplier.html">For suppliers</a></li>
+              <li></li>
+              <li><a class="dropdown-item" href="404.html">Open a case</a></li>
+              <li><a class="dropdown-item" href="404.html">Report IPR infringement</a></li>
+              <li><a class="dropdown-item" href="404.html">Report abuse</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personal protective.html">Personal protective E...</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Trade Assurance.html">Trade Show</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="404.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Buyer Central
+            </a>
+            <ul class="dropdown-menu buyer-central">
+              <li>
+                <a class="dropdown-item Blog" href="404.html"><img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01wlImAt1sGy58OFEjA_!!6000000005740-2-tps-79-79.png"> Blog</a>
+              </li>
+              <li>
+                <a class="dropdown-item Trade-Assurance" href="Trade Assurance.html"><img src="https://s.alicdn.com/@img/tfs/TB1gBp7SSzqK1RjSZPcXXbTepXa-40-40.png?webp=close">Trade Assurance</a>
+              </li>
+              <li>
+                <a class="dropdown-item Production" href="404.html"><img src="https://s.alicdn.com/@img/tfs/TB1mhSNafc3T1VjSZPfXXcWHXXa-40-32.png?webp=close">Production Monitoring<br> & Inspection Service</a>
+              </li>
+              <li>
+                <a class="dropdown-item Logistics" href="404.html"><img src="https://s.alicdn.com/@img/tfs/TB196hmTbPpK1RjSZFFXXa5PpXa-40-40.png?webp=close">Logistics Service</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="404.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sell on Alibaba.com
+            </a>
+            <ul class="dropdown-menu sell-on-alibaba">
+              <li>
+                <a class="dropdown-item" href="404.html">For global suppliers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="404.html">For Chinese suppliers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="404.html">Partner Program</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="external-nav-right">
+          <li class="nav-item">
+              <a class="nav-link" href="https://play.google.com/store/apps"><i class="bi bi-phone"></i>Gate app</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              English-USD
+              </a>
+              <ul class="dropdown-menu english-usd_currence">
+                <span>Region settiongs</span>
+                <form action="">
+                  <label for="language">Language</label>
+                  <select id="cars" name="cars" size="1">
+                    <option value="volvo">Bangla</option>
+                    <option value="saab">English</option>
+                    <option value="fiat">Spanish</option>
+                    <option value="audi">Japanish</option>
+                    <option value="audi">China</option>
+                    <option value="audi">Hindi</option>
+                    <option value="audi">Urdo</option>
+                  </select><br>
+                  <label for="currence">Currence</label>
+                  <select id="cars" name="cars" size="1">
+                    <option value="volvo">Bangladeshi(TK)</option>
+                    <option value="saab">Dolar</option>
+                    <option value="fiat">Rupi</option>
+                    <option value="audi">Paund</option>
+                    <option value="audi">Yean</option>
+                    <option value="audi">Coyen</option>
+                    <option value="audi">Quayen</option>
+                  </select><br>
+                  <p><i class="bi bi-exclamation-circle"></i> The price for this currency is subject to change with foreign exchange rate. For reference only.</p>
+                  <br>
+                  <input type="submit" value="Save">
+                </form>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ship-bangladesh
+              </a>
+              <ul class="dropdown-menu Select-Country">
+                <span>Choose your location</span>
+                <form action="">
+                    <label for="language">Delivery options and fees may vary based on your location</label>
+                    <div class="sign-in-to-see">
+                      <a href="#">sign in to see your address</a>
+                    </div>
+                    <hr>
+                    <select id="cars" name="cars" size="1">
+                      <option value="volvo">Bangladesh</option>
+                      <option value="saab">Chin</option>
+                      <option value="fiat">Japan</option>
+                      <option value="audi">America</option>
+                      <option value="audi">Austrolia</option>
+                      <option value="audi">India</option>
+                      <option value="audi">Pakistan</option>
+                      <option value="audi">Arob</option>
+                    </select>
+                    <br>
+                    <input type="text" placeholder="Enter your zip code">
+                    <br>
+                    <input type="submit" value="Save">
+                  </form>
+              </ul>
+            </li>  
+        </span>
+      </div>
+    </div>
+  </nav>
+</div>
+<!---navbar-close--->
+<div class="Trade-Assurance-0">
+    <h2>About-Trade-Assurance</h2>
+</div>
+    <div class="carousel slide" data-ride="carousel" id="demo">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#demo" data-slide-to="1">
+            </li>
+            <li data-target="#demo" data-slide-to="2">
+            </li>
+            <li data-target="#demo" data-slide-to="3">
+            </li>
+            <li data-target="#demo" data-slide-to="4">
+            </li>
+        </ul>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="https://img.alicdn.com/tfs/TB11FhKdBWD3KVjSZFsXXcqkpXa-1920-650.jpg" class="img-fluid">
+
+              <div class="carousel-caption">
+                <h2 class="animated bounceInDown" style="animation-delay: 1s;">
+                <img src="https://img.alicdn.com/tfs/TB1IEBHdEKF3KVjSZFEXXXExFXa-43-45.png"> Trade Assurance</h2>
+                <h1 class="animated bounceInLeft" style="animation-delay: 2s;">Protect Your Unitube.com Orders</h1>
+                <p class="animated bounceInRight" style="animation-delay: 2s;">Trade Assurance protects online orders when payment is made through Unitube.com.</p>
+              </div>  
+            </div>
+              
+            <div class="carousel-item">
+                <img src="https://img.alicdn.com/tfs/TB1PoVIdwKG3KVjSZFLXXaMvXXa-1920-650.jpg" class="img-fluid"> 
+                <div class="carousel-caption">
+                <h2 class="animated bounceInDown" style="animation-delay: 1s;">
+                <img src="https://img.alicdn.com/tfs/TB1IEBHdEKF3KVjSZFEXXXExFXa-43-45.png"> Trade Assurance</h2>
+                <h1 class="animated bounceInLeft" style="animation-delay: 2s;">Protect Your Unitube.com Orders</h1>
+                <p class="animated bounceInRight" style="animation-delay: 2s;">Trade Assurance protects online orders when payment is made through Unitube.com.</p>
+              </div>  
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://img.alicdn.com/tfs/TB1OOdIdwaH3KVjSZFjXXcFWpXa-1920-650.jpg" class="img-fluid"> 
+                <div class="carousel-caption">
+                <h2 class="animated bounceInDown" style="animation-delay: 1s;">
+                <img src="https://img.alicdn.com/tfs/TB1IEBHdEKF3KVjSZFEXXXExFXa-43-45.png"> Trade Assurance</h2>
+                <h1 class="animated bounceInLeft" style="animation-delay: 2s;">Protect Your Unitube.com Orders</h1>
+                <p class="animated bounceInRight" style="animation-delay: 2s;">Trade Assurance protects online orders when payment is made through Unitube.com.</p>
+              </div>  
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://img.alicdn.com/tfs/TB1I84JdBiE3KVjSZFMXXbQhVXa-1920-650.jpg" class="img-fluid"> 
+                <div class="carousel-caption">
+                <h2 class="animated bounceInDown" style="animation-delay: 1s;">
+                <img src="https://img.alicdn.com/tfs/TB1IEBHdEKF3KVjSZFEXXXExFXa-43-45.png"> Trade Assurance</h2>
+                <h1 class="animated bounceInLeft" style="animation-delay: 2s;">Protect Your Unitube.com Orders</h1>
+                <p class="animated bounceInRight" style="animation-delay: 2s;">Trade Assurance protects online orders when payment is made through Unitube.com.</p>
+              </div>  
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://img.alicdn.com/tfs/TB14WlLdEGF3KVjSZFvXXb_nXXa-1920-650.jpg" class="img-fluid"> 
+                <div class="carousel-caption">
+                <h2 class="animated bounceInDown" style="animation-delay: 1s;">
+                <img src="https://img.alicdn.com/tfs/TB1IEBHdEKF3KVjSZFEXXXExFXa-43-45.png"> Trade Assurance</h2>
+                <h1 class="animated bounceInLeft" style="animation-delay: 2s;">Protect Your Unitube.com Orders</h1>
+                <p class="animated bounceInRight" style="animation-delay: 2s;">Trade Assurance protects online orders when payment is made through Unitube.com.</p>
+              </div>  
+            </div>
+
+        </div>
+    </div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="">
+        <h2>Have Greater Peace of Mind</h2>
+        <p>In the event that either Product Quality or Ship Date varies from what you and the supplier had agreed to in the Trade Assurance online order, we will offer you assistance in reaching a satisfactory outcome, including getting your money back</p>
+      </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <p> <i class="bi bi-box"></i> Product Quality</p>
+            </div>
+            <div class="col-lg-6">
+                <p> <i class="bi bi-clock"></i>
+                On-Time Ship Date</p>
+            </div>
+        </div>
+
+      <div class="">
+          <p>Pro Tip: The Trade Assurance online order is where you and your supplier define product quality and specify ship date. Please review it carefully, so we can better protect you.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!---msg-and-sticky-top--->
+  <div class="Message sticky-bottom">
+    <div class="Message0">
+      <a href="Messages.html">Message</a>
+    </div>
+    <button class="Message-button"><i class="bi bi-envelope-heart"></i></button>
+  </div>
+
+  <div class="right-menu sticky-bottom">
+    <div class="test">
+      <a href="index.html">Back to top</a>
+    </div>
+    <button class="menu-button">↑</button>
+  </div>
+<!---msg-and-sticky-top--->
+<!---text-section-start--->
+  <div class="text-section">
+    <div class="container-fluid">
+      <div class="text-border">
+        <div class="row">
+          <div class="col-lg-2 col-xl-2 col-xxl-2">
+            <span>
+              About alibaba online shopping website:
+            </span>
+          </div>
+          <div class="col-lg-10 col-xl-10 col-xxl-10">
+            <p>Wholesale alibaba online shopping website include racks designed to help you organize different types of jewelry, clothes and accessories. For instance, the standing earring holder is a jewelry organizer meant to hold earrings, while the earring racks help you display your earrings and serve as a beautiful decorative item. The sunglass rack can be rotated 360 degrees and can fit a large number of glasses and shades. It has several hooks and holes that will help you showcase your products. Browse through the alibba online shopping site and pick the right fit for your business.</p>
+            <br>
+            <p>
+              Browse Alibaba.com to get the most efficient, beautiful and aesthetic alibaba online shopping website. Get unbelievable discounts from reliable alibaba online shopping website sellers worldwide and up your online business game. It doesn't matter whether you are a professional or a business entity, you are sure to find alibaba online shopping website that serve your needs. You can buy alibaba online shopping website built with cutting-edge technologies ensuring your target visitors have a seamless experience. The popular technologies include HTML, CSS, CakePHP, Javascript, CMS, and so on. The good news is you don't need to fret the technical know-how. Just look through a wide array of selections of alibaba online shopping website, ranging from a restaurant site to a dating application, and select a well-suited option. Low on loading time and high on aesthetics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secend-text-section">
+    <div class="container-fluid">
+      <div class="text-border">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="related-search">
+              <a href="404.html">india online shopping website</a>
+              <a href="404.html">shopping website provider</a>
+              <a href="404.html">website design in germany</a>
+              <a href="404.html">sudan online shopping website design</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">  
+            <div class="related-search">
+              <a href="#">consumer shopping website</a>
+              <a href="404.html">b2b2c website</a>
+              <a href="404.html">website design b2b</a>
+              <a href="404.html">website with drupal wordpress</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="related-search">
+              <a href="404.html">the best website for shopping online</a>
+              <a href="404.html">online shopping website pakistan</a>
+              <a href="404.html">china alibaba pakistan website</a>
+              <a href="404.html">china b2b website</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="related-search">
+              <a href="404.html">c2c online shopping website design</a>
+              <a href="404.html">china b2b b2c website</a>
+              <a href="404.html">china website design b2c</a>
+              <a href="404.html">Alibaba.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third-text-section">
+    <div class="container-fluid">
+      <div class="text-border">
+        <div class="row">
+          <div class="col-lg-6 col-xl-6 col-xxl-6">
+            <p>Haven't found the right supplier yet ? Let matching verified suppliers find you.</p>
+          </div>
+          <div class="col-lg-4 col-xl-4 col-xxl-4">
+            <a href="404.html">Haven't found the</a>
+          </div>
+          <div class="col-lg-2 col-xl-2 col-xxl-2">
+            <img src="">
+            <span>Request for Quotation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---text-section-close--->
+<!---fotter-start--->
+<section class="section-1" id="spsc">
+  <div class="section-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>Customer services</h4>
+          <a href="404.html">Help Center</a>
+          <a href="404.html">Report abuse</a>
+          <a href="404.html">Open a case</a>
+          <a href="404.html">Policies & rules</a>
+          <a href="404.html">Get paid for your feedback</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>About us</h4>
+          <a href="about.html">About Alibaba.com</a>
+          <a href="404.html">About Alibaba Group</a>
+          <a href="404.html">About Alibaba.com Blog</a>
+          <a href="404.html">Legal Notification</a>
+          <a href="supplier.html">About Product</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>Source on Alibaba.com</h4>
+          <a href="404.html">Resources</a>
+          <a href="404.html">Request for Quatation</a>
+          <a href="404.html">Ready to Ship</a>
+          <a href="404.html">Buyer partners </a>
+          <a href="404.html">Alibaba.com select</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="Customer-1">
+          <h4>Sell on Unitube.com</h4>
+          <a href="404.html">Supplier memberships</a>
+          <a href="404.html">Learning Center</a>
+          <a href="404.html">Partner Program</a>
+          <a href="404.html">Any Time Any Qus</a>
+          <a href="404.html">Help for Unitube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fotter-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xl-5 col-xxl-5">
+          <div class="download-app">
+            <h5>Download <a href="https://play.google.com/store/apps?hl=en&gl=US">
+                <button class="app-store"><i class="bi bi-apple"></i>App store</button>
+              </a>
+              <a href="https://play.google.com/store/apps;">
+                <button class="google-play"><i class="bi bi-google-play"></i> Play store</button>
+              </a>
+            </h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 col-xxl-4">
+          <h5>Alibaba supplier app :<a href="https://unitube.xyz/"><img class="Unitube-main-logo" src="image/unitube.png">---</a></h5>
+        </div>
+        <div class="col-lg-3 col-xl-3 col-xxl-3">
+          <div class="socialmeida-icon">
+          <h5>Follow us :<a href="https://web.facebook.com/profile.php?id=100081438856484"><img class="face-icon"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlqammHal_OHwVQR9pZZtlzenDW_EbNBX5_w&usqp=CAU"></a>
+            <a href="https://www.instagram.com"><img class="insta-icon" src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM"></a>
+            <a href="https://twitter.com/islam1725"><img class="twit-icon" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png"></a>
+            <a href="https://www.linkedin.com/in/md-jahirul-islam-2b6a78252/"><img class="twit-icon" src="https://www.pngkit.com/png/full/556-5564956_share-this-project-with-your-network-of-choice.png"></a>
+          </h5>
+          </div>
+        </div>
+
+        <div class="fotter-language">
+        <a href="404.html">Alibaba.com site :</a>  
+        <a href="404.html">International -</a>
+        <a href="404.html">Español -</a>
+        <a href="404.html">Portugues -</a>
+        <a href="404.html">Deutsch -</a>
+        <a href="404.html">Francais -</a>
+        <a href="404.html">Italiano -</a>
+        <a href="404.html">हिंदी -</a>
+        <a href="404.html">Pусский-</a>
+        <a href="404.html">한국어</a>
+        <a href="404.html"> - اللغة العربية - </a>
+        <a href="404.html">ภาษาไทย -</a>
+        <a href="404.html"> Türk</a>
+        </div>
+        <p>© 2018-2023 Alibaba.com. All rights reserved.</p>
+       </div>
+    </div> 
+  </div>
+</section>
+<!---fotter-close--->
+<!---mobile-searchbar-script-start--->
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!---mobile-searchbar-script-close--->
+<!---mobile-menu-script-start--->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!---mobile-menu-script-close--->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" />
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"/>   
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"/>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>    
